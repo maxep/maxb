@@ -1,5 +1,7 @@
 # MAXB
 
+[![CI Status](http://img.shields.io/travis/maxep/maxb.svg?style=flat)](https://travis-ci.org/maxep/maxb)
+
 The Mobile Architecture for XML Binding (MAXB) provides a XSD to IOS Objective-C and Android Java binding compiler based on JAXB XJC.
 
 ##_Note_
