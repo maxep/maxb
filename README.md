@@ -18,7 +18,7 @@ _[MXJC](https://github.com/maxep/mxjc) (and related projects: [mwsc](https://git
 
 ##How to Use
 
-Download zip package from repository mentioned in version history below, latest stable release is [0.6.1](https://github.com/bulldog2011/bulldog-repo/tree/master/repo/releases/com/leansoft/mxjc/0.6.1), then extract the zip file and run mxjc script in command line:
+Download zip package from repository mentioned in version history below, latest stable release is [0.7.0](https://github.com/maxep/maxb/releases/tag/v0.7.0), then extract the zip file and run mxjc script in command line:
 
     Usage: maxb [-options ...] <schema file/URL/dir> ... [-b <bindinfo>] ...
     If dir is specified, all schema files in it will be compiled.
