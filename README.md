@@ -3,9 +3,12 @@
 The Mobile Architecture for XML Binding (MAXB) provides a XSD to IOS Objective-C and Android Java binding compiler based on JAXB XJC.
 
 ##_Note_
-_ MAXB is initially a fork of [mxjc](https://github.com/maxep/mxjc). [MXJC](https://github.com/maxep/mxjc) (and related projects: [mwsc](https://github.com/maxep/mwsc), [nano](https://github.com/maxep/nano) & [pico](https://github.com/bulldog2011/pico)) has been developed by [bulldog2011](http://bulldog2011.github.com) but stayed as is from 2013. As it is very well designed and implemented, I decided to fork and upgrade it._
+_MAXB is initially a fork of [mxjc](https://github.com/maxep/mxjc)._
+
+_[MXJC](https://github.com/maxep/mxjc) (and related projects: [mwsc](https://github.com/maxep/mwsc), [nano](https://github.com/maxep/nano) & [pico](https://github.com/bulldog2011/pico)) has been developed by [bulldog2011](http://bulldog2011.github.com) but stayed as is from 2013. As it is very well designed and implemented, I decided to fork and upgrade it._
 
 ##Feature Highlight
+
 1. ***Standard based*** : based on [Oracle JAXB 2.1](http://jaxb.java.net/2.1/) XJC, recognize most standard XML Schema components.
 2. ***Objective-c Pico Binding Support*** : auto-generate [PicoKit for IOS](https://github.com/maxep/PicoKit) bindable classes from XML Schema or WSDL.
 3. ***Android Nano Binding Support*** : auto-generate [Nano for Android](https://github.com/maxep/nano) bindable classes from XML Schema or WSDL.
@@ -17,30 +20,28 @@ _ MAXB is initially a fork of [mxjc](https://github.com/maxep/mxjc). [MXJC](http
 
 Download zip package from repository mentioned in version history below, latest stable release is [0.6.1](https://github.com/bulldog2011/bulldog-repo/tree/master/repo/releases/com/leansoft/mxjc/0.6.1), then extract the zip file and run mxjc script in command line:
 
-
-Usage: maxb [-options ...] <schema file/URL/dir> ... [-b <bindinfo>] ...
-If dir is specified, all schema files in it will be compiled.
-Options:
--nano              :  target Nano for Android as code generation target (default)
--privateField      :  generate private fields, accessed by public accessors, only for nano binding
--pico              :  target Pico for IOS as code generation target
--prefix <prefix>   :  add prefix to the target classes, only for pico binding
-(recommended to avoid possible name conflict)
--nv                :  do not perform strict validation of the input schema(s)
--b <file/dir>      :  specify external bindings files (each <file> must have its own -b)
-If a directory is given, **/*.xjb is searched
--d <dir>           :  generated files will go into this directory
--p <pkg>           :  specifies the target package
--httpproxy <proxy> :  set HTTP/HTTPS proxy. Format is [user[:password]@]proxyHost:proxyPort
--httpproxyfile <f> :  Works like -httpproxy but takes the argument in a file to protect password
--readOnly          :  generated files will be in read-only mode
--xmlschema         :  treat input as W3C XML Schema (default)
--wsdl              :  treat input as WSDL and compile schemas inside it (experimental,unsupported)
--verbose           :  be extra verbose
--quiet             :  suppress compiler output
--help              :  display this help message
--version           :  display version information
-
+    Usage: maxb [-options ...] <schema file/URL/dir> ... [-b <bindinfo>] ...
+    If dir is specified, all schema files in it will be compiled.
+    Options:
+    -nano              :  target Nano for Android as code generation target (default)
+    -privateField      :  generate private fields, accessed by public accessors, only for nano binding
+    -pico              :  target Pico for IOS as code generation target
+    -prefix <prefix>   :  add prefix to the target classes, only for pico binding
+    (recommended to avoid possible name conflict)
+    -nv                :  do not perform strict validation of the input schema(s)
+    -b <file/dir>      :  specify external bindings files (each <file> must have its own -b)
+    If a directory is given, **/*.xjb is searched
+    -d <dir>           :  generated files will go into this directory
+    -p <pkg>           :  specifies the target package
+    -httpproxy <proxy> :  set HTTP/HTTPS proxy. Format is [user[:password]@]proxyHost:proxyPort
+    -httpproxyfile <f> :  Works like -httpproxy but takes the argument in a file to protect password
+    -readOnly          :  generated files will be in read-only mode
+    -xmlschema         :  treat input as W3C XML Schema (default)
+    -wsdl              :  treat input as WSDL and compile schemas inside it (experimental,unsupported)
+    -verbose           :  be extra verbose
+    -quiet             :  suppress compiler output
+    -help              :  display this help message
+    -version           :  display version information
 
 
 ## Version History
@@ -61,7 +62,6 @@ If a directory is given, **/*.xjb is searched
 * Initial version supporting Nano binding for Android.
 * This version is compatible with [Nano 0.6.3](https://github.com/bulldog2011/bulldog-repo/tree/master/repo/releases/com/leansoft/nano/0.6.3)
 
-
 ##Docs
 1. [Scheam driven data binding with Nano and mxjc](http://bulldog2011.github.com/blog/2013/02/07/schema-driven-nano-binding/)
 2. [Schema Driven Web Serivce Client Development on Android, Part 1 : Hello eBay Finding](http://bulldog2011.github.com/blog/2013/02/17/schema-driven-on-android-part-1-hello-ebay-finding/)
@@ -69,7 +69,6 @@ If a directory is given, **/*.xjb is searched
 
 ##Faq
 [Link to Faq on Wiki](https://github.com/bulldog2011/mxjc/wiki/FAQ)
-
 
 ##Current Limitation
 1. xsd:choice is not supported and will be ignored if presents
