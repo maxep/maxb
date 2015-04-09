@@ -1,0 +1,6 @@
+Specification-Title: maxb
+Specification-Version: 0.7
+Specification-Vendor: leansoft
+Implementation-Version: 0.7
+Implementation-Vendor: leansoft
+Implementation-Title: mobile architecture for xml binding
