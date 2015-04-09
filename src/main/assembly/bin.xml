@@ -10,7 +10,7 @@
   </formats>
   <fileSets>
     <fileSet>
-            <directory>${project.build.directory}/mxjc</directory>
+            <directory>${project.build.directory}/maxb</directory>
             <outputDirectory>/</outputDirectory>
             <includes>
                 <include>/**</include>
